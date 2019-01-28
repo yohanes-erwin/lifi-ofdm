@@ -1,7 +1,7 @@
 // Author: Erwin Ouyang
 // Date  : 23 Feb 2018
 // Update: 11 Mar 2018 - Add configurable peak threshold control register
-//	       28 Jan 2019 - Peak threshold control removed, GitHub first commit
+//	       28 Jan 2019 - Peak threshold control removed, GitHub first commit, from lifi_ap_functional_daa
 
 `timescale 1ns / 1ps
 

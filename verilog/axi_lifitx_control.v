@@ -2,7 +2,7 @@
 // Date  : 23 Feb 2018
 // Update: 11 Mar 2018 - Add guard interval control register
 //         15 Jul 2018 - Porting to RedPitaya
-//	       28 Jan 2019 - GitHub first commit
+//	       28 Jan 2019 - GitHub first commit, from lifi_ap_functional_daa
 
 `timescale 1ns / 1ps
 
