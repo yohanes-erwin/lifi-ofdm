@@ -5,7 +5,7 @@
 
 `timescale 1ns / 1ps
 
-module axi_lifirx_control
+module axi_vlcrx_control
     (
 	    // *** AXI4 clock and reset port ***
 		input  wire        aclk,
@@ -325,5 +325,17 @@ module axi_lifirx_control
     // Bit 0 = fwd_inv = 1 (forward)
     assign fft_config = 8'h1;
     assign fft_config_en = 1;
+
+	// *** FFT IP core settings ***	
+	// Number of Channels  = 1
+	// Transform Length    = 64
+	// Architecture Choice = Radix-4, Burst I/O
+	// Data Formats        = Fixed Point
+	// Scaling Options     = Unscaled
+	// Rounding Modes      = Convergent Rounding
+	// Input Data Width    = 16
+	// Phase Factor Width  = 16
+	// Control Signals     = ARESETn
+	// Output Ordering     = Natural Order
     
 endmodule

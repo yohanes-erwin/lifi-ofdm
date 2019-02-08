@@ -6,7 +6,7 @@
 
 `timescale 1ns / 1ps
 
-module axi_lifitx_control
+module axi_vlctx_control
     (
 	    // *** AXI4 clock and reset port ***
 		input  wire        aclk,
@@ -341,5 +341,17 @@ module axi_lifitx_control
     // 0b0101_0100_0000_1000 = 0x5408
     assign ifft_config = 16'h5408;
     assign ifft_config_en = 1;
-
+	
+	// *** IFFT IP core settings ***
+	// Number of Channels  = 1
+	// Transform Length    = 64
+	// Architecture Choice = Radix-4, Burst I/O
+	// Data Formats        = Fixed Point
+	// Scaling Options     = Scaled
+	// Rounding Modes      = Convergent Rounding
+	// Input Data Width    = 16
+	// Phase Factor Width  = 16
+	// Control Signals     = ARESETn
+	// Output Ordering     = Natural Order, Cyclic Prefix Insertion
+	
 endmodule
